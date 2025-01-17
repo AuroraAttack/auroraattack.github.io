@@ -32,7 +32,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 | Field           | Description       |
 |:-------------   |:------------------|
-| Adversary Name</div>| This refers to the name or codename of the attacker being simulated in the exercise. |
+| <div style="width: 20pt">Adversary Name</div>| This refers to the name or codename of the attacker being simulated in the exercise. |
 | Creation Time   | This indicates the exact date and time when the emulation plan or attack scenario was created. |
 
 ### Attack Step
