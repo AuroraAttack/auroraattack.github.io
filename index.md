@@ -10,15 +10,23 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Aurora-demos
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Aurora is a framework that can construct multi-step cyberattacks (attack chains).
+With the help of LLM, it makes use of external attack tools and threat intelligence reports.
 
-## Header 2
+We are preparing publishing the source code of Aurora.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## 🎉 Introduction
+
+<p><a href="https://arxiv.org/pdf/2407.16928"><img alt="Paper thumbnail" align="right" width="160" src="images/First_page.png"></a></p>
+
+- Introduces AURORA, a PDDL-based cyberattack simulation system.
+- Integrates LLMs into PDDL for real-world BAS.
+- Automates construction of a 1,800+ action attack space with over 300 chains.
+- AURORA generates higher quality attack plans with broader TTP coverage.
+
+Our paper: [From Sands to Mansions: Simulating Full Attack Chain with LLM-Organized Knowledge](https://arxiv.org/pdf/2407.16928)
 
 ### Header 3
 
