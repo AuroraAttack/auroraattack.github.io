@@ -62,6 +62,18 @@ Victims：a Windows 10, a macOS and an Ubuntu
 
 You can download the attack simulation environment from here(https://XXXX)
 
+### Execute the attack manually
+Each `uuid` encompasses an `executor`, within which the `command` parameter specifies the actual attack command that needs to be executed. You should proceed manually through the attack steps in the sequence of the UUIDs. 
+
+
+
+
+
+
+
+
+
+
 ##### Header 5
 
 1.  This is an ordered list following a header.
