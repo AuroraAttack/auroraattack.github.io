@@ -52,11 +52,14 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | preconditions   | The conditions that must be met before the attack step can be successfully executed.  |
 | effects   | The outcomes or changes that result from executing the attack step. |
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## Usage
+### The emulation infrastructure
+<p align="center">
+  <img width="800" src="assets/images/the%20emulation%20infrastructure.jpg" alt="cli output"/>
+</p>
+Attackers: a Kali, a Windows 10     
+Victims：a Windows 10, a macOS and an Ubuntu
+You can download the attack simulation environment from here(https://XXXX)
 
 ##### Header 5
 
