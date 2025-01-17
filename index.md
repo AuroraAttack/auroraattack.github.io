@@ -36,6 +36,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | Creation Time   | This indicates the exact date and time when the emulation plan or attack scenario was created. |
 
 ### Attack Step
+
 | Field        | Description       |
 |:-------------|:------------------|
 | uuid  | A unique identifier for the attack step, ensuring that each step can be individually referenced and tracked. |
