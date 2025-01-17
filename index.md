@@ -65,28 +65,6 @@ You can download the attack simulation environment from here(https://XXXX)
 ### Execute the attack manually
 Each `uuid` encompasses an `executor`, within which the `command` parameter specifies the actual attack command that needs to be executed. You should proceed manually through the attack steps in the sequence of the UUIDs. 
 
-+-------------------+                              +-------------------+
-|                   |                 Resolve DNS  |                   |
-|     DNS Server    +---UDP-53 <-------------------+      Target       |
-|      (Linux)      |                              |     (Windows)     |
-|                   |                              |                   |
-|  192.168.122.185  |                +-------------+  192.168.122.160  |
-|                   |                |             |                   |
-+-------------------+                |             +---+----------+----+
-                                     |                 |          |
-                    Download binary  |                 |          |
-                +--------------------+                 |          |
-                |                                      |          |
-                v                                      |          |
-              TCP-80                                   |          |
-+---------------+---+                                  |          |
-|                   |               mTLS C2 Connection |          |
-|     C2 Server     +---TCP-8888 <---------------------+          |
-|      (Linux)      |                                             |
-|                   |                 WireGuard C2 Connection     |
-|  192.168.122.111  +---UDP-53  <---------------------------------+
-|                   |
-+-------------------+
 
 
 
