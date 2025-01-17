@@ -37,7 +37,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 ### Attack Step
 
-| Field        | Description       |
+| Field        | Description          |
 |:-------------|:------------------|
 | uuid  | A unique identifier for the attack step, ensuring that each step can be individually referenced and tracked. |
 | name   | A human-readable name for the attack step, which describes what the step aims to achieve or the action being performed. |
