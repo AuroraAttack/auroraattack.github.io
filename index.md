@@ -53,12 +53,45 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | effects   | The outcomes or changes that result from executing the attack step. |
 
 ## Emulation Scenario
-### The Infrastructure
+### Emulation Infrastructure
 <p align="center">
   <img width="800" src="assets/images/the%20emulation%20infrastructure.jpg" alt="cli output"/>
 </p>
-Attackers: a Kali, a Windows 10     
-Victims：a Windows 10, a macOS and an Ubuntu
+
+#### Attacker information
+
+| System        | IP Address          |
+|:-------------|:------------------|
+| Kali   | 192.168.56.33 |
+| Windows10   | 192.168.56.34 |
+
+1. **Linux Attack Platform**: tested and executed on Kali Linux
+    - C2 Framework
+      - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+      - [Sliver Framework](https://sliver.sh/)
+
+2. **Windows Attack Platform**: Windows 10
+    - C2 Framework
+      - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+      - [Sliver Framework](https://sliver.sh/)
+
+---
+
+
+#### DNS_server information
+
+| System        | IP Address          |
+|:-------------|:------------------|
+| Debian   | 192.168.56.100 |
+
+
+#### Victim information
+
+| System        | IP Address          |
+|:-------------|:------------------|
+| Windows10   | 192.168.56.15 |
+| Ubuntu   | 192.168.56.16 |
+| macOS   | 192.168.56.17 |
 
 You can download the attack simulation environment from [here](https://drive.google.com/file/d/1cx-xcn10rDQaoq1SC9CW__0tbZVA5rEo/view?usp=sharing).
 
