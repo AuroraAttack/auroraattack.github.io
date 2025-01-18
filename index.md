@@ -72,10 +72,9 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 2. **Windows Attack Platform**: Windows 10
     - C2 Framework
-      - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
-      - [Sliver Framework](https://sliver.sh/)
+      - [Metasploit Framework](https://windows.metasploit.com/)
 
----
+* * *
 
 
 #### DNS_server information
@@ -84,6 +83,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 |:-------------|:------------------|
 | Debian   | 192.168.56.100 |
 
+* * *
 
 #### Victim information
 
@@ -93,6 +93,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | Ubuntu   | 192.168.56.16 |
 | macOS   | 192.168.56.17 |
 
+* * *
 You can download the attack simulation environment from [here](https://drive.google.com/file/d/1cx-xcn10rDQaoq1SC9CW__0tbZVA5rEo/view?usp=sharing).
 
 ### Scenario Steps
