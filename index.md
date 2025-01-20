@@ -65,8 +65,8 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 ### DNS_server Information
 
-| System        | IP Address          |
-|:-------------|:------------------|
+| System        | IP Address          | Version          |
+|:-------------|:------------------|:------------------|
 | Debian   | 192.168.56.100 |    |
 
 ### Victim information
