@@ -24,9 +24,13 @@ layout: default
 # Introduction
 <p><a href="https://arxiv.org/pdf/2407.16928"><img alt="Paper thumbnail" align="right" width="100" src="assets/images/First_page.png"></a></p>
 - Introduces AURORA, a PDDL-based cyberattack simulation system.
+
 - Integrates LLMs into PDDL for real-world BAS.
+  
 - Automates construction of a 1,800+ action attack space with over 300 chains.
+ 
 - AURORA generates higher quality attack plans with broader TTP coverage.
+  
 Our paper: [From Sands to Mansions: Simulating Full Attack Chain with LLM-Organized Knowledge](https://arxiv.org/pdf/2407.16928)
 
 # Attack Demos
