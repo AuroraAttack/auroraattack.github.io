@@ -2,10 +2,6 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](./another-page.html).
-
 # Aurora-demos
 
 Aurora is a framework that can construct multi-step cyberattacks (attack chains).
