@@ -70,10 +70,10 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 ### Attacker Information
 
-| System        | IP Address          | Version          |
-|:-------------|:------------------|:------------------|
-| kali   | 192.168.56.33 | 2024.1 x64 |
-| windows10   | 192.168.56.34 | Enterprise 22H2 |
+| System        | IP Address          | Version          | username/password |
+|:-------------|:------------------|:------------------|:------------------|
+| kali   | 192.168.56.33 | 2024.1  | kali/kali
+| windows10   | 192.168.56.34 | Enterprise 22H2 | attacker 123456 |
 
 1. **Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
     - C2 Framework
@@ -95,23 +95,23 @@ The aforementioned tools are located in the `tools` folder on the desktop. Doubl
 
 ### Firewall Information
 
-| System        | IP Address          | Version          |
-|:-------------|:------------------|:------------------|
-| pfSense   | 192.168.56.100 |    |
+| System        | IP Address          | Version          | username/password |
+|:-------------|:------------------|:------------------|:------------------|
+| pfSense   | 192.168.56.100 |  CE-2.6.0   |  -- |
 
 ### DNS_server Information
 
-| System        | IP Address          | Version          |
-|:-------------|:------------------|:------------------|
-| Debian   | 192.168.56.100 |    |
+| System        | IP Address          | Version          | username/password |
+|:-------------|:------------------|:------------------|:------------------|
+| Debian   | 192.168.56.100 | 12.9.0  | server/123456  |
 
 ### Victim information
 
-| System        | IP Address          | Version          |
-|:-------------|:------------------|:------------------|
-| Windows10   | 192.168.56.15 | Enterprise 22H2 |
-| Ubuntu   | 192.168.56.16 | 22.04 |
-| macOS   | 192.168.56.17 | Monterey 12.0 , 21A5304g |
+| System        | IP Address          | Version          | username/password |
+|:-------------|:------------------|:------------------|:------------------|
+| Windows10   | 192.168.56.15 | Enterprise 22H2 | victim 123456 |
+| Ubuntu   | 192.168.56.16 | 22.04 | victim 123456 |
+| macOS   | 192.168.56.17 | Monterey 12.0 | victim 123456 |
 
 You can download the attack simulation environment from [here](https://drive.google.com/file/d/1cx-xcn10rDQaoq1SC9CW__0tbZVA5rEo/view?usp=sharing).
 
