@@ -115,7 +115,7 @@ The firewall configuration is as follows:
 | Debian   | 10.0.0.201 | 12.9.0  | server/123456  |
 
 We have configured a DNS server using Debian. This server is intended to simulate a scenario in which victim hosts download malicious files to their local systems by accessing a domain name. Additionally, the DNS server can be used to monitor traffic, facilitating subsequent analysis.<br>
-You can simulate the attack process of downloading the implant to the local system on the victim-Windows 10 machine by accessing the phishing website through a browser and visiting the specified domain name`sliver.labnet.local`.
+You can simulate the attack process of downloading the implant to the local system on the victim-Windows 10 machine by accessing the phishing website through a browser and visiting the specified domain name `sliver.labnet.local`.
 <p align="center">
   <img width="800" src="assets/images/phishing_website.png" alt="cli output"/>
 </p>
