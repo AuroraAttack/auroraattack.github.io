@@ -75,6 +75,21 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | kali   | 192.168.56.33 | 2024.1  | kali/kali
 | windows10   | 192.168.56.34 | Enterprise 22H2 | attacker 123456 |
 
+
+1. **Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
+    - C2 Frameworks
+     - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+     - [Sliver Framework](https://sliver.sh/)
+    - Other tools
+      - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
+        
+2. **Attack Platform**: tested and executed on Kali Linux 2019.1
+    - C2 Frameworks
+        - [ATT&CK Evals Carbanak C2 Server](/carbanak/Resources/utilities/carbanak_c2server/c2server/c2server.elf)
+        - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+    - [tmux](https://github.com/tmux/tmux/wiki)
+
+
 1.**Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
 
     - C2 Framework
