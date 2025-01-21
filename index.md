@@ -106,7 +106,7 @@ The firewall configuration is as follows:
 |:-------------|:------------------|:------------------|
 | WAN(wan) -> em0   | 192.168.199.159/24 |  pfSense   |
 | LAN(lan) -> em1   | 192.168.1.1/24 |  victim-Windows10,victim-Ubuntu,victim-macOS   |
-| OPT1(opt1) -> em2   | 10.0.0.1/24 |  attacker-Kali,attacker-Windows10   |
+| OPT1(opt1) -> em2   | 10.0.0.1/24 |  attacker-Kali,attacker-Windows10,DNS_server   |
 
 ### DNS_server Information
 
@@ -115,6 +115,10 @@ The firewall configuration is as follows:
 | Debian   | 10.0.0.201 | 12.9.0  | server/123456  |
 
 We have configured a DNS server using Debian. This server is intended to simulate a scenario in which victim hosts download malicious files to their local systems by accessing a domain name. Additionally, the DNS server can be used to monitor traffic, facilitating subsequent analysis.
+You can simulate the attack process of downloading the implant to the local system on the victim-Windows 10 machine by accessing the phishing website through a browser and visiting the specified domain name(sliver.labnet.local).
+<p align="center">
+  <img width="800" src="assets/images/phishing_website.png" alt="cli output"/>
+</p>
 
 
 ### Victim information
