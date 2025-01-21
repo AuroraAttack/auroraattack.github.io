@@ -75,41 +75,24 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | kali   | 192.168.56.33 | 2024.1  | kali/kali
 | windows10   | 192.168.56.34 | Enterprise 22H2 | attacker 123456 |
 
-
 1. **Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
-    - C2 Frameworks
-     - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
-     - [Sliver Framework](https://sliver.sh/)
-    - Other tools
-      - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
-        
-2. **Attack Platform**: tested and executed on Kali Linux 2019.1
-    - C2 Frameworks
-        - [ATT&CK Evals Carbanak C2 Server](/carbanak/Resources/utilities/carbanak_c2server/c2server/c2server.elf)
-        - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
-    - [tmux](https://github.com/tmux/tmux/wiki)
-
-
-1.**Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
-
     - C2 Framework
-      - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
-      - [Sliver Framework](https://sliver.sh/)
+        - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+        - [Sliver Framework](https://sliver.sh/)
     - Other tools
-      - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
+        - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
 
 Running the `msfconsole` command in the Kali terminal allows you to use the Metasploit framework, and running `sliver` or `sliver-server` enables you to use the Sliver framework.
 
-
-2.**Windows Attack Platform**: the windows host has undergone the following modifications: the firewall has been disabled, Windows Security has been turned off, the automatic update feature has been deactivated, and VMware Tools has been installed to facilitate moving or copying files between the physical machine and virtual machines.
-
+2. **Windows Attack Platform**: the windows host has undergone the following modifications: the firewall has been disabled, Windows Security has been turned off, the automatic update feature has been deactivated, and VMware Tools has been installed to facilitate moving or copying files between the physical machine and virtual machines.
     - C2 Framework
-      - [Metasploit Framework](https://windows.metasploit.com/)
-      - [Sliver Framework](https://sliver.sh/)
+        - [Metasploit Framework](https://windows.metasploit.com/)
+        - [Sliver Framework](https://sliver.sh/)
     - Other tools
-      - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
+        - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
 
 The windows tools are located in the `tools` folder on the desktop. Double-clicking `msfconsole.bat` allows you to use the Metasploit framework, and running `sliver-server_windows.exe` in the command line enables you to use the Sliver framework.
+
 
 ### Firewall Information
 
