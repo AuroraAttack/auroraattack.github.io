@@ -2,25 +2,6 @@
 layout: default
 ---
 
-# Table of contents
-
-  * [Introduction](#Introduction)
-  * [Features](#features)
-  * [Requirements](#requirements)
-  * [Asking Questions / Contributing](#asking-questions--contributing)
-      * [Asking Questions](#asking-questions)
-      * [Contributing](#contributing)
-  * [Installation](#installation)
-      * [CocoaPods](#cocoapods)
-      * [Carthage](#carthage)
-      * [Manually](#manually)
-  * [Usage](#usage)
-      * [Getting Started](#getting-started)
-      * [Advanced Usage](#advanced-usage)
-  * [Usage within App Extensions](#instructions-within-app-extensions)
-  * [License](#license)
-
-
 # Introduction
 <p><a href="https://arxiv.org/pdf/2407.16928"><img alt="Paper thumbnail" align="right" width="100" src="assets/images/First_page.png"></a></p>
 
