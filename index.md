@@ -76,6 +76,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 | windows10   | 192.168.56.34 | Enterprise 22H2 | attacker 123456 |
 
 1.**Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
+
     - C2 Framework
       - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
       - [Sliver Framework](https://sliver.sh/)
@@ -86,6 +87,7 @@ Running the `msfconsole` command in the Kali terminal allows you to use the Meta
 
 
 2.**Windows Attack Platform**: the windows host has undergone the following modifications: the firewall has been disabled, Windows Security has been turned off, the automatic update feature has been deactivated, and VMware Tools has been installed to facilitate moving or copying files between the physical machine and virtual machines.
+
     - C2 Framework
       - [Metasploit Framework](https://windows.metasploit.com/)
       - [Sliver Framework](https://sliver.sh/)
