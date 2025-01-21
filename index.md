@@ -84,6 +84,7 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 Running the `msfconsole` command in the Kali terminal allows you to use the Metasploit framework, and running `sliver` or `sliver-server` enables you to use the Sliver framework.
 
+
 2. **Windows Attack Platform**: the windows host has undergone the following modifications: the firewall has been disabled, Windows Security has been turned off, the automatic update feature has been deactivated, and VMware Tools has been installed to facilitate moving or copying files between the physical machine and virtual machines.
     - C2 Framework
       - [Metasploit Framework](https://windows.metasploit.com/)
@@ -91,7 +92,7 @@ Running the `msfconsole` command in the Kali terminal allows you to use the Meta
     - Other tools
       - [atomic-red-team](https://github.com/redcanaryco/atomic-red-team)
 
-The aforementioned tools are located in the `tools` folder on the desktop. Double-clicking `msfconsole.bat` allows you to use the Metasploit framework, and running `sliver-server_windows.exe` in the command line enables you to use the Sliver framework.
+The windows tools are located in the `tools` folder on the desktop. Double-clicking `msfconsole.bat` allows you to use the Metasploit framework, and running `sliver-server_windows.exe` in the command line enables you to use the Sliver framework.
 
 ### Firewall Information
 
