@@ -72,10 +72,10 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 | System        | IP Address          | Version          | username/password |
 |:-------------|:------------------|:------------------|:------------------|
-| kali   | 192.168.56.33 | 2024.1  | kali/kali
-| windows10   | 192.168.56.34 | Enterprise 22H2 | attacker 123456 |
+| kali   | 192.168.56.33 | 2024.1  | kali/kali |
+| windows10   | 192.168.56.34 | Enterprise 22H2 | attacker/123456 |
 
-1. **Kali Attack Platform**: this kali system has already used the `sliver` command to generate implants for both Windows and Linux, which can be directly used for testing.
+1. **Kali Attack Platform**: the Kali system has the Apache service enabled to simulate a phishing website attack. On the desktop, there are implants generated using the Sliver command for both Windows and Linux, which can be directly used for testing.
     - C2 Framework
         - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
         - [Sliver Framework](https://sliver.sh/)
@@ -98,7 +98,15 @@ The windows tools are located in the `tools` folder on the desktop. Double-click
 
 | System        | IP Address          | Version          | username/password |
 |:-------------|:------------------|:------------------|:------------------|
-| pfSense   | 192.168.56.100 |  CE-2.6.0   |  -- |
+| pfSense   | 192.168.56.100 |  CE-2.6.0   |  --- |
+
+The firewall configuration is as follows:
+
+| Interface        | IP Address          | Related Host          | 
+|:-------------|:------------------|:------------------|
+| WAN(wan) -> em0   | 192.168.199.159/24 |  pfSense   |
+| LAN(lan) -> em1   | 192.168.1.1/24 |  victim-Windows10,victim-Ubuntu,victim-macOS   |
+| OPT1(opt1) -> em2   | 10.0.0.1/24 |  attacker-Kali,attacker-Windows10   |
 
 ### DNS_server Information
 
@@ -106,13 +114,19 @@ The windows tools are located in the `tools` folder on the desktop. Double-click
 |:-------------|:------------------|:------------------|:------------------|
 | Debian   | 192.168.56.100 | 12.9.0  | server/123456  |
 
+We have configured a DNS server using Debian. This server is intended to simulate a scenario in which victim hosts download malicious files to their local systems by accessing a domain name. Additionally, the DNS server can be used to monitor traffic, facilitating subsequent analysis.
+
+
 ### Victim information
 
 | System        | IP Address          | Version          | username/password |
 |:-------------|:------------------|:------------------|:------------------|
-| Windows10   | 192.168.56.15 | Enterprise 22H2 | victim 123456 |
-| Ubuntu   | 192.168.56.16 | 22.04 | victim 123456 |
-| macOS   | 192.168.56.17 | Monterey 12.0 | victim 123456 |
+| Windows10   | 192.168.56.15 | Enterprise 22H2 | victim/123456 |
+| Ubuntu   | 192.168.56.16 | 22.04 | victim/123456 |
+| macOS   | 192.168.56.17 | Monterey 12.0 | victim/123456 |
+
+
+
 
 You can download the attack simulation environment from [here](https://drive.google.com/file/d/1cx-xcn10rDQaoq1SC9CW__0tbZVA5rEo/view?usp=sharing).
 
