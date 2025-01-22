@@ -53,8 +53,8 @@ Each folder in `examples/` contains an attach chain, which includes the emulatio
 
 | System        | IP Address          | Version          | username/password |
 |:-------------|:------------------|:------------------|:------------------|
-| kali   | 10.0.0.101 | 2024.1  | kali/kali |
-| windows10   | 10.0.0.102 | Enterprise 22H2 | attacker/123456 |
+| Kali   | 10.0.0.101 | 2024.1  | kali/kali |
+| Windows10   | 10.0.0.102 | Enterprise 22H2 | attacker/123456 |
 
 1. **Kali Attack Platform**: the Kali system has the Apache service enabled to simulate a phishing website attack. On the desktop, there are implants generated using the Sliver command for both Windows and Linux, which can be directly used for testing.
     - C2 Framework
@@ -87,7 +87,7 @@ The firewall configuration is as follows:
 |:-------------|:------------------|:------------------|
 | WAN(wan) -> em0   | 192.168.199.159/24 |  firewall-pfSense   |
 | LAN(lan) -> em1   | 192.168.1.1/24 |  victim-Windows10,victim-Ubuntu,victim-macOS   |
-| OPT1(opt1) -> em2   | 10.0.0.1/24 |  attacker-Kali,attacker-Windows10,DNS_server   |
+| OPT1(opt1) -> em2   | 10.0.0.1/24 |  attacker-Kali,attacker-Windows10,DNS_server-Debian   |
 
 ### DNS_server Information
 
