@@ -13,7 +13,7 @@ layout: default
  
 - We published the first large-scale, automatically generated dataset with 1,000+ attack chains, including scripts and environments.
   
-Our paper: [From Sands to Mansions: Simulating Full Attack Chain with LLM-Organized Knowledge](https://arxiv.org/pdf/2407.16928)
+Our paper: [From Sands to Mansions: Towards Automated Cyberattack Emulation with Classical Planning and Large Language Models](https://arxiv.org/pdf/2407.16928)
 
 # Attack Demos
 
