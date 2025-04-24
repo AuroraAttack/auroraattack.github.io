@@ -26,8 +26,7 @@ For more details, please refer to the [introduction to attack chains](https://gi
 <p align="center">
   <img width="800" src="assets/images/the%20emulation%20infrastructure.jpg" alt="cli output"/>
 </p>
-
-If you want to set up a realistic attack environment, check out this [doc](https://github.com/LexusWang/Aurora-demos/blob/main/docs/Emulation_Infrastructure_info.md) for network topology setup. It includes attacker and victim configurations with firewalls and DNS servers to mimic real-world conditions. 
+If you want to set up a more realistic attack environment, this [doc](https://github.com/LexusWang/Aurora-demos/blob/main/docs/Emulation_Infrastructure_info.md) outlines a network topology with attacker and victim setups, including firewalls and DNS_servers to better mimic real-world attack scenarios. Just follow the guide to configure your environment! 
 
 ## Infrastructure Download
 Use the generated attack chain YML file and run pull.py to automatically download and deploy the corresponding virtual machine environment (works with VirtualBox; VMware users can manually deploy the downloaded files).
