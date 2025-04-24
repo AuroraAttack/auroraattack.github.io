@@ -47,13 +47,14 @@ python pull.py -p #yml_file_path -d #storage_path -vm #VBoxManage.exe_path --url
 - `-nr`：Prohibiting duplicate deployment  
 - `-r`：Allowing duplicate downloads  
 - `-firewall`：Use pfSense firewall to isolate the attack aircraft and the target aircraft  
-[Links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md) detailed multiple victim machine ,you can customize based on your needs.we’ve also got a pre-configured Kali attack machine ready for you! You can download it directly from [here](https://drive.google.com/file/d/1I7jD1fDSoad1xl5OKabJjxfg63LqvBco/view?usp=sharing)
+[Links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md) detailed multiple victim machine ,you can customize based on your needs.
 
 ## Emulation Topology
 <p align="center">
   <img width="800" src="assets/images/the%20emulation%20infrastructure.jpg" alt="cli output"/>
 </p>
-If you want to set up a more realistic attack environment, this [doc](https://github.com/LexusWang/Aurora-demos/blob/main/docs/Emulation_Infrastructure_info.md) outlines a network topology with attacker and victim setups, including firewalls and DNS_servers to better mimic real-world attack scenarios. Just follow the guide to configure your environment! 
+
+If you want to set up a more realistic attack environment, this [doc](https://github.com/LexusWang/Aurora-demos/blob/main/docs/Emulation_Infrastructure_info.md) outlines a network topology with attacker and victim setups, including firewalls and DNS_servers to better mimic real-world attack scenarios. Just follow the guide to configure your environment! we’ve also got a pre-configured Kali attack machine ready for you! You can download it directly from [here](https://drive.google.com/file/d/1I7jD1fDSoad1xl5OKabJjxfg63LqvBco/view?usp=sharing)
 
 ## Script Execution
 We've generated executable attack scripts with AURORA and placed them in [here](https://github.com/LexusWang/Aurora-demos/tree/main/attack_execution_scripts) .Once your environment is configured, simply open the console, run the scripts, and follow the on-screen instructions to execute the attack.
