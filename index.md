@@ -55,6 +55,30 @@ python pull.py -p #yml_file_path -d #storage_path -vm #VBoxManage.exe_path --url
 - `-firewall`：Use pfSense firewall to isolate the attack aircraft and the target aircraft  
 We've detailed multiple victim machine [links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md),you can customize based on your needs.
 
+## Script Execution
+```bash
+python ../results/execution_xxxx.py
+```
+Click the following headings for details:
+<details>
+<summary>EXAMPLE-1_execution_keyboard_input_simulated-3</summary>
+
+This attack plan uses `Metasploit` and `Sliver` tools to compromise Windows systems. First, a listener is established to capture incoming connections. A malicious `Sliver` payload is then created and delivered by tricking the victim into downloading/running it, granting remote access. Finally, this access is leveraged to deploy a stealthy `Meterpreter` payload via `Sliver` for data exfiltration (`keyboard input simulation`)
+
+
+![progress](images/example1.gif)
+
+</details>
+
+<details>
+<summary>EXAMPLE-2_execution_file_info_known-1</summary>
+
+This attack simulation targets Windows systems using `Sliver` and `Metasploit`. It starts by creating a `Sliver` implant (malicious.exe) and tricking the victim into downloading/running it as Administrator. This grants attackers an elevated `Sliver` C2 session. Next, a `Metasploit` listener is set up to catch a reverse HTTPS payload ("meterpreter_reverse_http") deployed through `Sliver`, enabling a stealthy `Meterpreter` session. Finally, attackers use `Meterpreter` to search for sensitive files (like *.txt) on compromised machines.
+
+
+![progress](images/example2.gif)
+</details>
+
 ## Scenario Steps
 Each `uuid` encompasses an `executor`, within which the `command` parameter specifies the actual attack command that needs to be executed. You should proceed manually through the attack steps in the sequence of the UUIDs.
 
