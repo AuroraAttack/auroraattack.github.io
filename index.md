@@ -47,7 +47,7 @@ python pull.py -p #yml_file_path -d #storage_path -vm #VBoxManage.exe_path --url
 - `-nr`：Prohibiting duplicate deployment  
 - `-r`：Allowing duplicate downloads  
 - `-firewall`：Use pfSense firewall to isolate the attack aircraft and the target aircraft  
-We've detailed multiple victim machine [links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md),you can customize based on your needs.
+[Links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md) detailed multiple victim machine ,you can customize based on your needs.we’ve also got a pre-configured Kali attack machine ready for you! You can download it directly from [here](https://drive.google.com/file/d/1I7jD1fDSoad1xl5OKabJjxfg63LqvBco/view?usp=sharing)
 
 ## Emulation Topology
 <p align="center">
