@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Introduction
-<p><a href="https://arxiv.org/pdf/2407.16928"><img alt="Paper thumbnail" align="right" width="100" src="assets/images/First_page.png"></a></p>
+<p><a href="https://arxiv.org/pdf/2407.16928"><img alt="Paper thumbnail" align="right" width="150" src="assets/images/First_page.png"></a></p>
 
 - Aurora automatically creates cyberattacks using third-party tools and mimics real-world attackers by analyzing threat intelligence reports.
 
