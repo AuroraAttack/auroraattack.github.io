@@ -7,7 +7,7 @@ layout: default
 
 - Aurora automatically creates cyberattacks using third-party tools and mimics real-world attackers by analyzing threat intelligence reports.
 
-- We designed a modular system to organize attack steps and combined classical planning with LLM to solve challenges in building multi-step attacks.
+- We designed a modular system(Attack Action Linking Model , AALM) to organize attack steps and combined classical planning with LLM to solve challenges in building multi-step attacks.
   
 - Experiments proved Aurora generates higher-quality and more diverse attack chains than existing tools or cutting-edge AI models.
  
