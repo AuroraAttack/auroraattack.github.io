@@ -66,7 +66,7 @@ Click the following headings for details:
 This attack plan uses `Metasploit` and `Sliver` tools to compromise Windows systems. First, a listener is established to capture incoming connections. A malicious `Sliver` payload is then created and delivered by tricking the victim into downloading/running it, granting remote access. Finally, this access is leveraged to deploy a stealthy `Meterpreter` payload via `Sliver` for data exfiltration (`keyboard input simulation`)
 
 
-![progress](images/example1.gif)
+![progress](assets/images/example1.gif)
 
 </details>
 
@@ -76,7 +76,7 @@ This attack plan uses `Metasploit` and `Sliver` tools to compromise Windows syst
 This attack simulation targets Windows systems using `Sliver` and `Metasploit`. It starts by creating a `Sliver` implant (malicious.exe) and tricking the victim into downloading/running it as Administrator. This grants attackers an elevated `Sliver` C2 session. Next, a `Metasploit` listener is set up to catch a reverse HTTPS payload ("meterpreter_reverse_http") deployed through `Sliver`, enabling a stealthy `Meterpreter` session. Finally, attackers use `Meterpreter` to search for sensitive files (like *.txt) on compromised machines.
 
 
-![progress](images/example2.gif)
+![progress](assets/images/example2.gif)
 </details>
 
 ## Scenario Steps
