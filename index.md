@@ -46,8 +46,9 @@ python pull.py -p #yml_file_path -d #storage_path -vm #VBoxManage.exe_path --url
 - `url_table_path`：The path of the Download Link mapping table (url_table.csv)  
 - `-nr`：Prohibiting duplicate deployment  
 - `-r`：Allowing duplicate downloads  
-- `-firewall`：Use pfSense firewall to isolate the attack aircraft and the target aircraft  
-[Links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md) detailed multiple victim machine ,you can customize based on your needs.
+- `-firewall`：Use pfSense firewall to isolate the attack aircraft and the target aircraft
+
+[Here](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md) detailed multiple victim machine ,you can customize based on your needs.
 
 ## Emulation Topology
 <p align="center">
