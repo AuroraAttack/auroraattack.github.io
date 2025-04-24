@@ -56,7 +56,7 @@ We've detailed multiple victim machine [links](https://github.com/LexusWang/Auro
 If you want to set up a more realistic attack environment, this [doc](https://github.com/LexusWang/Aurora-demos/blob/main/docs/Emulation_Infrastructure_info.md) outlines a network topology with attacker and victim setups, including firewalls and DNS_servers to better mimic real-world attack scenarios. Just follow the guide to configure your environment! 
 
 ## Script Execution
-We've generated executable attack scripts with AURORA and placed them in [here](https://github.com/LexusWang/Aurora-demos/tree/main/attack_execution_scripts) .
+We've generated executable attack scripts with AURORA and placed them in [here](https://github.com/LexusWang/Aurora-demos/tree/main/attack_execution_scripts) .Once your environment is configured, simply open the console, run the scripts, and follow the on-screen instructions to execute the attack.
 
 ```bash
 python ../results/execution_xxxx.py
