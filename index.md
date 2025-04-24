@@ -56,6 +56,8 @@ python pull.py -p #yml_file_path -d #storage_path -vm #VBoxManage.exe_path --url
 We've detailed multiple victim machine [links](https://github.com/LexusWang/Aurora-demos/blob/main/docs/environment_introduction.md),you can customize based on your needs.
 
 ## Script Execution
+We've generated executable attack chains with AURORA and placed them in [here](https://github.com/LexusWang/Aurora-demos/tree/main/attack_execution_scripts) . Feel free to test them in your setup.
+
 ```bash
 python ../results/execution_xxxx.py
 ```
@@ -79,8 +81,6 @@ This attack simulation targets Windows systems using `Sliver` and `Metasploit`. 
   <img width="800" src="assets/images/example2.gif" alt="cli output"/>
 </p>
 </details>
-
-
 
 
 
