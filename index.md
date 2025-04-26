@@ -110,6 +110,6 @@ This attack simulation targets Windows systems using `Sliver` and `Metasploit`. 
 
 **_Licensing_**
 ```
-This project is open-source and distributed under the MIT. You are free to use, modify, and distribute the software for any purpose.  
+Distributed under the MIT License. The attack chains are for education, research, and testing purpose. The author does not condone any illegal use. Use as your own risk.  
 ```
 
