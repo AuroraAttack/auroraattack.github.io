@@ -15,6 +15,15 @@ layout: default
   
 Our paper: [From Sands to Mansions: Towards Automated Cyberattack Emulation with Classical Planning and Large Language Models](https://arxiv.org/pdf/2407.16928)
 
+
+# System Overview
+
+<p align="center">
+
+<img src="assets/images/framework.png" alt="cli output" width="1000"/>
+
+</p>
+
 # Attack Demos
 
 ## Attack chains
