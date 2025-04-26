@@ -24,6 +24,18 @@ Our paper: [From Sands to Mansions: Towards Automated Cyberattack Emulation with
 
 </p>
 
+Aurora’s architecture comprises five components:
+
+- Attack Tool Analyzer: Converts third-party tool documentation into structured attack actions using rule-based and LLM-assisted predicate extraction.
+
+- Attack Report Analyzer: Extracts Tactics, Techniques, and Procedures (TTPs) from CTI reports via LLMs to guide attack planning.
+
+- Attack Planning: Uses PDDL and reward functions (aligned with CTI-derived TTPs) to generate attack chains.
+
+- Attack Environment Builder: Deploys pre-configured virtual machines to replicate vulnerable environments.
+
+- Attack Execution and Data Collection: Semi-automatically runs attack scripts and collects traces for dataset construction.
+
 # Attack Demos
 
 ## Attack chains
